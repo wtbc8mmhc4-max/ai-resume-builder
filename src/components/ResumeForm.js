@@ -142,10 +142,10 @@ export default function ResumeForm({
   }
 
   return (
-    <div className="flex h-full flex-col bg-white rounded border border-slate-200 shadow-sm overflow-hidden">
+    <div className="flex lg:h-full h-auto flex-col bg-white rounded border border-slate-200 shadow-sm lg:overflow-hidden overflow-visible">
       
       {/* Scrollable Container */}
-      <div className="flex-1 overflow-y-auto pt-4 px-4 pb-4 space-y-6">
+      <div className="flex-1 lg:overflow-y-auto overflow-visible pt-4 px-4 pb-4 space-y-6">
         
         {/* Step 1: Accordion Panels */}
         <div className="space-y-4">

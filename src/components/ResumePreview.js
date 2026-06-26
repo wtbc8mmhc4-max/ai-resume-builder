@@ -78,7 +78,7 @@ export default function ResumePreview({ htmlContent, loading, onShare }) {
   };
 
   return (
-    <div className="flex h-full flex-col bg-white rounded border border-slate-200 shadow-sm overflow-hidden relative min-h-[500px]">
+    <div className="flex lg:h-full h-auto flex-col bg-white rounded border border-slate-200 shadow-sm lg:overflow-hidden overflow-visible relative lg:min-h-0 min-h-[500px]">
       
       {/* Header Toolbar */}
       <div className="border-b border-slate-100 bg-slate-50/50 p-4 flex flex-wrap items-center justify-between gap-3 z-10">

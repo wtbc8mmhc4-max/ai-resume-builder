@@ -185,7 +185,7 @@ function EditorContent() {
   return (
     <>
       {/* Editor Workspace Container */}
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col gap-6 overflow-hidden">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col gap-6 overflow-y-auto">
         
         {/* Workspace Title & Credits warning */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200 pb-4">
@@ -216,9 +216,9 @@ function EditorContent() {
         </div>
 
         {/* Dual panel Split View Layout */}
-        <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:min-h-0 h-auto">
           {/* Left panel: accordion forms & options */}
-          <div className="h-full">
+          <div className="lg:h-full h-auto">
             <ResumeForm
               initialData={formData}
               userPrompt={userPrompt}
@@ -237,7 +237,7 @@ function EditorContent() {
           </div>
 
           {/* Right panel: dynamic sandboxed iframe preview */}
-          <div className="h-full">
+          <div className="lg:h-full h-auto">
             <ResumePreview 
               htmlContent={htmlContent} 
               loading={loading} 
